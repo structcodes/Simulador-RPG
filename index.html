@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Simulador de dados RPG</title>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Simulador de Dados de RPG🎲</h1>
+    <p class="lead">Escolha o tipo de dado, clique em <strong>Rolar</strong> e veja o resultado com animação.</p>
+
+    <!-- Controles -->
+    <div class="controls" role="group" aria-label="Controles do simulador">
+      <label for="diceType">Tipo de dado</label><br>
+      <select id="diceType" aria-label="Selecionar tipo de dado">
+        <option value="4">D4</option>
+        <option value="6" selected>D6</option>
+        <option value="8">D8</option>
+        <option value="10">D10</option>
+        <option value="12">D12</option>
+        <option value="20">D20</option>
+        <option value="100">D100</option>
+      </select>
+
+      <div class="actions">
+        <button id="rollBtn" aria-live="polite">Rolar</button>
+        <button id="rerollBtn" class="ghost" title="Rolar novamente">Rolar novamente</button>
+      </div>
+    </div>
+
+    <!-- Resultado -->
+    <div class="result" aria-live="polite">
+      <div class="dice-visual" id="diceVisual">-</div>
+      <div class="meta">
+        <div class="last">Resultado</div>
+        <div class="value" id="resultValue">-</div>
+        <div class="small">Clique em <strong>Rolar</strong> para começar</div>
+      </div>
+    </div>
+
+    <footer>Simulador simples – ótimo para testes rápidos de jogadas</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
