@@ -14,5 +14,6 @@ Permite escolher o tipo de dado (D4, D6, D8, D10, D12, D20 ou D100), rolar com a
 
 
 ---
-👉 [Acesse o site aqui](https://seu-usuario.github.io/simulador-dados-rpg)  
+👉 [Acesse o site aqui](https://structcodes.github.io/Simulador-RPG/)  
+
 
